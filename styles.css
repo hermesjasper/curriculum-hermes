@@ -66,16 +66,16 @@ button { font: inherit; }
 .legend-project { background: var(--red); }
 .legend-study { background: #7c4dce; }
 .legend-work { background: #169a70; }
-.chronology-guide { max-width: 1320px; margin: 0 auto 18px; display: grid; grid-template-columns: 28% 32% 10% 30%; color: var(--muted); font-family: "DM Mono", monospace; font-size: 9px; text-transform: uppercase; }
+.chronology-guide { max-width: 1320px; margin: 0 auto 18px; display: grid; grid-template-columns: 24% 29% 9% 24% 14%; color: var(--muted); font-family: "DM Mono", monospace; font-size: 9px; text-transform: uppercase; }
 .chronology-guide span:nth-child(3) { text-align: center; }
-.chronology-guide span:last-child { padding-left: 20px; }
+.chronology-guide span:nth-child(4), .chronology-guide span:last-child { padding-left: 14px; }
 .chronology { --month: 57.6px; position: relative; max-width: 1320px; height: calc(98 * var(--month)); margin: 0 auto; border-top: 1px solid var(--ink); }
-.chronology-axis { position: absolute; z-index: 2; top: 0; bottom: 0; left: 62%; width: 2px; background: var(--ink); }
-.year-tick { position: absolute; z-index: 3; top: calc(var(--at) * var(--month)); left: 62%; width: 8%; padding-left: 16px; transform: translateY(-2px); }
+.chronology-axis { position: absolute; z-index: 2; top: 0; bottom: 0; left: 55%; width: 2px; background: var(--ink); }
+.year-tick { position: absolute; z-index: 3; top: calc(var(--at) * var(--month)); left: 55%; width: 7%; padding-left: 16px; transform: translateY(-2px); }
 .year-tick::before { content: ""; position: absolute; left: -4px; top: 7px; width: 9px; height: 2px; background: var(--ink); }
 .year-tick strong { display: block; font-size: 16px; line-height: 1; }
 .year-tick small { display: block; margin-top: 4px; color: var(--red); font-family: "DM Mono", monospace; font-size: 8px; text-transform: uppercase; }
-.now-tick { position: absolute; z-index: 5; top: 0; left: 62%; padding: 10px 0 0 16px; transform: translateY(-2px); }
+.now-tick { position: absolute; z-index: 5; top: 0; left: 55%; padding: 10px 0 0 16px; transform: translateY(-2px); }
 .now-tick::before { content: ""; position: absolute; left: -4px; top: 15px; width: 9px; height: 9px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 4px var(--paper); }
 .now-tick strong, .now-tick small { display: block; font-family: "DM Mono", monospace; text-transform: uppercase; }
 .now-tick strong { font-size: 9px; }
@@ -88,15 +88,16 @@ button { font: inherit; }
 .duration-line::after { bottom: 0; }
 .duration-line i { position: sticky; display: block; top: calc(var(--header-height) + 30px); width: 9px; height: 38px; background: currentColor; filter: brightness(.82); }
 .side-left { left: 0; }
-.side-right { left: 70%; width: 30%; }
-.lane-study { left: 0; width: 60%; grid-template-columns: minmax(0, 1fr) 9px; gap: 18px; }
+.side-right { left: 62%; width: 24%; }
+.lane-study { left: 0; width: 53%; grid-template-columns: minmax(0, 1fr) 9px; gap: 18px; }
 .lane-study .duration-line { grid-column: 2; grid-row: 1; }
-.lane-study .duration-content { grid-column: 1; grid-row: 1; max-width: 520px; padding: 1px 26px 16px 0; }
-.lane-project { left: 0; width: 28%; }
-.side-right-project { left: 70%; width: 30%; }
-.work-lane-a { width: 15%; }
-.work-lane-b { left: 85%; width: 15%; }
-.work-short-a, .work-short-b { left: 70%; width: 30%; }
+.lane-study .duration-content { grid-column: 1; grid-row: 1; width: 55%; max-width: none; margin-left: auto; padding: 1px 26px 16px 0; }
+.lane-project { left: 0; width: 24%; }
+.side-right-project { left: 86%; width: 14%; grid-template-columns: 1fr; }
+.side-right-project img { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.work-lane-a { width: 11%; }
+.work-lane-b { left: 74%; width: 12%; }
+.work-short-a, .work-short-b { left: 62%; width: 24%; }
 .work-short-a .duration-content h3, .work-short-b .duration-content h3 { font-size: 21px; }
 .duration-content { min-width: 0; padding: 1px 8px 16px 0; color: var(--ink); }
 .duration-content time { display: block; margin: 5px 0 9px; color: var(--muted); font-family: "DM Mono", monospace; font-size: 8px; text-transform: uppercase; }
@@ -107,14 +108,14 @@ button { font: inherit; }
 .duration-content .tech-list { margin-top: 14px; }
 .tech-list li { padding: 5px 7px; background: #e6e4dc; font-family: "DM Mono", monospace; font-size: 8px; }
 .point-item { z-index: 7; display: grid; grid-template-columns: 92px 1fr; gap: 14px; padding: 0; background: transparent; }
-.point-item::after { content: ""; position: absolute; z-index: 1; left: 100%; top: 22px; width: 258%; border-top: 2px dashed currentColor; }
+.point-item::after { content: ""; position: absolute; z-index: 1; left: 100%; top: 22px; width: 317%; border-top: 2px dashed currentColor; }
 .side-right-project::after { display: none; }
-.side-right-project::before { content: ""; position: absolute; z-index: 1; right: 0; top: 22px; width: 127%; border-top: 2px dashed currentColor; }
+.side-right-project::before { content: ""; position: absolute; z-index: 1; right: 0; top: 22px; width: 321%; border-top: 2px dashed currentColor; }
 .point-item img { position: relative; z-index: 2; width: 92px; height: 92px; object-fit: cover; }
 .point-item > div { position: relative; z-index: 2; padding: 7px 8px; background: var(--paper); color: var(--ink); }
 .point-item h3 { margin-top: 6px; font-size: 17px; }
 .point-item p { margin: 6px 0 0; color: var(--muted); font-size: 10px; line-height: 1.45; }
-.origin-note { left: 30%; width: 26%; padding-left: 16px; border-left: 3px solid var(--ink); }
+.origin-note { left: 26%; width: 27%; padding-left: 16px; border-left: 3px solid var(--ink); }
 .origin-note h3 { margin-top: 8px; font-size: 24px; }
 .origin-note p { color: var(--muted); font-size: 11px; line-height: 1.6; }
 .color-ceub { color: #7c4dce; }
@@ -163,7 +164,7 @@ footer div { display: flex; gap: 24px; }
   .duration-item { height: auto; min-height: 150px; grid-template-columns: 8px 1fr; }
   .lane-study { grid-template-columns: 8px 1fr; gap: 14px; }
   .lane-study .duration-line { grid-column: 1; }
-  .lane-study .duration-content { grid-column: 2; max-width: none; padding: 1px 8px 16px 4px; }
+  .lane-study .duration-content { grid-column: 2; width: auto; max-width: none; margin-left: 0; padding: 1px 8px 16px 4px; }
   .duration-line i { position: static; width: 8px; height: 44px; }
   .duration-content { padding-left: 4px; }
   .duration-content h3 { font-size: 28px; }
