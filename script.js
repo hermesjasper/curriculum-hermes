@@ -30,16 +30,3 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
-
-const filterButtons = document.querySelectorAll('.filter-button');
-const timelineItems = document.querySelectorAll('[data-type]');
-
-filterButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-    filterButtons.forEach((item) => item.classList.toggle('active', item === button));
-    timelineItems.forEach((item) => {
-      item.hidden = filter !== 'all' && item.dataset.type !== filter;
-    });
-  });
-});

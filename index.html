@@ -66,132 +66,122 @@
             <p class="section-index">02 / Trajetória</p>
             <h2>O presente é só<br />o ponto de partida.</h2>
           </div>
-          <div class="timeline-filters" role="group" aria-label="Filtrar trajetória">
-            <button class="filter-button active" data-filter="all" type="button">Tudo</button>
-            <button class="filter-button" data-filter="work" type="button">Trabalho</button>
-            <button class="filter-button" data-filter="study" type="button">Formação</button>
-            <button class="filter-button" data-filter="project" type="button">Projetos</button>
+          <div class="timeline-legend" aria-label="Legenda da linha do tempo">
+            <span><i class="legend-project"></i>Projetos</span>
+            <span><i class="legend-study"></i>Formação</span>
+            <span><i class="legend-work"></i>Experiência</span>
           </div>
         </div>
 
-        <div class="timeline">
-          <article class="timeline-year" data-year="2026">
-            <div class="year-marker"><span>2026</span><small>Agora</small></div>
-            <div class="year-events">
-              <section class="event reveal" data-type="work">
-                <div class="event-meta"><span class="tag tag-work">Trabalho</span><time>Jun 2026 — atual</time></div>
-                <h3>Estágio em Análise de Dados</h3>
-                <p class="event-place">CODEVASF</p>
-                <p>Análise de dados orçamentários e financeiros, automação de rotinas e desenvolvimento de relatórios gerenciais com Power BI, Excel/VBA, Python e SQL.</p>
-                <ul class="tech-list"><li>Power BI</li><li>Python</li><li>SQL</li><li>VBA</li></ul>
-              </section>
-              <section class="event event-compact reveal" data-type="study">
-                <div class="event-meta"><span class="tag tag-study">Formação</span><time>2023 — 2026</time></div>
-                <h3>Ciência de Dados e Machine Learning</h3>
-                <p class="event-place">Centro Universitário de Brasília</p>
-              </section>
-              <section class="event event-compact reveal" data-type="work">
-                <div class="event-meta"><span class="tag tag-work">Trabalho</span><time>Mar — Mai 2026</time></div>
-                <h3>Desenvolvedor de BI</h3>
-                <p class="event-place">ATTIZ</p>
-                <p>Evolução de plataforma SaaS white-label em Next.js, dashboards comerciais e melhorias de UX/UI.</p>
-              </section>
+        <div class="chronology-guide">
+          <span>Projetos e formação</span>
+          <span>Tempo</span>
+          <span>Experiência profissional</span>
+        </div>
+
+        <div class="chronology" aria-label="Linha do tempo profissional de agosto de 2026 a janeiro de 2019">
+          <div class="chronology-axis" aria-hidden="true"></div>
+          <div class="year-tick" style="--at: 0"><strong>2026</strong><small>Agora</small></div>
+          <div class="year-tick" style="--at: 19"><strong>2025</strong></div>
+          <div class="year-tick" style="--at: 31"><strong>2024</strong></div>
+          <div class="year-tick" style="--at: 43"><strong>2023</strong></div>
+          <div class="year-tick" style="--at: 55"><strong>2022</strong></div>
+          <div class="year-tick" style="--at: 67"><strong>2021</strong></div>
+          <div class="year-tick" style="--at: 79"><strong>2020</strong></div>
+          <div class="year-tick" style="--at: 91"><strong>2019</strong><small>O começo</small></div>
+
+          <article class="duration-item side-left lane-study color-ceub reveal" style="--start: 2; --months: 35; --mobile-order: 2">
+            <div class="duration-line"><i></i></div>
+            <div class="duration-content">
+              <span class="item-kind">Formação</span>
+              <time>Ago 2023 — Jun 2026</time>
+              <h3>Ciência de Dados e Machine Learning</h3>
+              <p>Centro Universitário de Brasília</p>
+              <ul class="tech-list"><li>Machine Learning</li><li>Dados</li></ul>
             </div>
           </article>
 
-          <article class="timeline-year" data-year="2025">
-            <div class="year-marker"><span>2025</span></div>
-            <div class="year-events">
-              <section class="event reveal" data-type="work">
-                <div class="event-meta"><span class="tag tag-work">Trabalho</span><time>Nov 2024 — Set 2025</time></div>
-                <h3>Auxiliar de Ciência de Dados</h3>
-                <p class="event-place">PNUD &amp; CNJ</p>
-                <p>Painéis executivos, governança de dados ponta a ponta, ETLs em R/SQL e integração com PostgreSQL e APIs REST.</p>
-                <ul class="tech-list"><li>Power BI</li><li>DAX</li><li>R</li><li>PostgreSQL</li><li>APIs</li></ul>
-              </section>
-              <section class="event project-event reveal" data-type="project" id="projetos">
-                <img src="assets/judiciary-analytics.webp" alt="Visualização abstrata de indicadores do Judiciário brasileiro" loading="lazy" />
-                <div class="project-copy">
-                  <div class="event-meta"><span class="tag tag-project">Projeto</span><time>2023 — 2025</time></div>
-                  <h3>Metas do Judiciário</h3>
-                  <p>Painéis analíticos para acompanhar resultados nacionais e apoiar a leitura estratégica do desempenho do Judiciário.</p>
-                  <span class="project-note">Imagem provisória</span>
-                </div>
-              </section>
+          <article class="duration-item side-left lane-study color-unb reveal" style="--start: 36; --months: 56; --mobile-order: 9">
+            <div class="duration-line"><i></i></div>
+            <div class="duration-content">
+              <span class="item-kind">Formação</span>
+              <time>Jan 2019 — Ago 2023</time>
+              <h3>Estatística</h3>
+              <p>Universidade de Brasília · créditos aproveitados</p>
             </div>
           </article>
 
-          <article class="timeline-year" data-year="2024">
-            <div class="year-marker"><span>2024</span></div>
-            <div class="year-events">
-              <section class="event reveal" data-type="work">
-                <div class="event-meta"><span class="tag tag-work">Trabalho</span><time>Jan 2022 — Nov 2024</time></div>
-                <h3>Suporte Técnico ao Justiça 4.0</h3>
-                <p class="event-place">PNUD &amp; CNJ</p>
-                <p>Desenvolvimento e manutenção de ETLs em R e SQL sobre o DataJUD, painéis de alto impacto e validação diária da qualidade dos indicadores.</p>
-                <ul class="tech-list"><li>R</li><li>SQL</li><li>DataJUD</li><li>Power BI</li></ul>
-              </section>
-              <section class="event project-event reveal" data-type="project">
-                <img src="assets/data-engineering.webp" alt="Visualização abstrata de um processo de engenharia de dados" loading="lazy" />
-                <div class="project-copy">
-                  <div class="event-meta"><span class="tag tag-project">Projeto</span><time>Justiça 4.0</time></div>
-                  <h3>Dados em escala nacional</h3>
-                  <p>Fluxos de extração, tratamento e validação para transformar dados judiciais em informação analítica confiável.</p>
-                  <span class="project-note">Imagem provisória</span>
-                </div>
-              </section>
+          <article id="projetos" class="point-item side-left lane-project color-project-red reveal" style="--start: 13; --mobile-order: 4">
+            <img src="assets/judiciary-analytics.webp" alt="Visualização abstrata de indicadores do Judiciário brasileiro" loading="lazy" />
+            <div><span class="item-kind">Projeto · 2023–2025</span><h3>Metas do Judiciário</h3><p>Painéis nacionais para acompanhamento estratégico do desempenho.</p></div>
+          </article>
+
+          <article class="point-item side-left lane-project color-project-green reveal" style="--start: 30; --mobile-order: 6">
+            <img src="assets/data-engineering.webp" alt="Visualização abstrata de um processo de engenharia de dados" loading="lazy" />
+            <div><span class="item-kind">Projeto · Justiça 4.0</span><h3>Dados em escala nacional</h3><p>Extração, tratamento e validação de dados judiciais.</p></div>
+          </article>
+
+          <article class="point-item side-left lane-project color-project-yellow reveal" style="--start: 49; --mobile-order: 8">
+            <img src="assets/education-analytics.webp" alt="Visualização abstrata de estatísticas educacionais" loading="lazy" />
+            <div><span class="item-kind">Projeto pessoal</span><h3>Painel ENEM</h3><p>Análise de indicadores educacionais em Streamlit.</p></div>
+          </article>
+
+          <article class="duration-item side-right work-short-a color-codevasf reveal" style="--start: 0; --months: 3; --mobile-order: 1">
+            <div class="duration-line"><i></i></div>
+            <div class="duration-content">
+              <span class="item-kind">Experiência</span><time>Jun 2026 — atual</time>
+              <h3>Estágio em Análise de Dados</h3><p>CODEVASF</p>
+              <p class="item-detail">Dados orçamentários, automações e relatórios gerenciais.</p>
             </div>
           </article>
 
-          <article class="timeline-year" data-year="2023">
-            <div class="year-marker"><span>2023</span></div>
-            <div class="year-events">
-              <section class="event event-compact reveal" data-type="study">
-                <div class="event-meta"><span class="tag tag-study">Formação</span><time>Até Ago 2023</time></div>
-                <h3>Estatística</h3>
-                <p class="event-place">Universidade de Brasília</p>
-                <p>Base quantitativa posteriormente aproveitada na formação em Ciência de Dados e Machine Learning.</p>
-              </section>
-              <section class="event project-event reveal" data-type="project">
-                <img src="assets/education-analytics.webp" alt="Visualização abstrata de estatísticas educacionais" loading="lazy" />
-                <div class="project-copy">
-                  <div class="event-meta"><span class="tag tag-project">Projeto pessoal</span><time>Streamlit</time></div>
-                  <h3>Painel ENEM</h3>
-                  <p>Exploração visual de indicadores educacionais, distribuições de desempenho e comparações de resultados.</p>
-                  <span class="project-note">Imagem provisória</span>
-                </div>
-              </section>
+          <article class="duration-item side-right work-short-b color-attiz reveal" style="--start: 3; --months: 3; --mobile-order: 3">
+            <div class="duration-line"><i></i></div>
+            <div class="duration-content">
+              <span class="item-kind">Experiência</span><time>Mar — Mai 2026</time>
+              <h3>Desenvolvedor de BI</h3><p>ATTIZ</p>
             </div>
           </article>
 
-          <article class="timeline-year" data-year="2021">
-            <div class="year-marker"><span>2021</span></div>
-            <div class="year-events">
-              <section class="event reveal" data-type="work">
-                <div class="event-meta"><span class="tag tag-work">Trabalho</span><time>Ago 2020 — Dez 2021</time></div>
-                <h3>Estágio em Ciência de Dados</h3>
-                <p class="event-place">Conselho Nacional de Justiça</p>
-                <p>Apoio a painéis em Power BI e Qlik Sense e conexão com bancos de dados por meio de R e SQL.</p>
-              </section>
-              <section class="event reveal" data-type="work">
-                <div class="event-meta"><span class="tag tag-work">Trabalho</span><time>Dez 2019 — Dez 2021</time></div>
-                <h3>Analista de Dados Jr.</h3>
-                <p class="event-place">ESTAT Consultoria</p>
-                <p>Limpeza de bases, análises estatísticas, relatórios, coleta em Python e suporte ao desenvolvimento de painéis.</p>
-              </section>
+          <article class="duration-item side-right color-pnud reveal" style="--start: 11; --months: 11; --mobile-order: 5">
+            <div class="duration-line"><i></i></div>
+            <div class="duration-content">
+              <span class="item-kind">Experiência</span><time>Nov 2024 — Set 2025</time>
+              <h3>Auxiliar de Ciência de Dados</h3><p>PNUD &amp; CNJ</p>
+              <p class="item-detail">BI executivo, governança, ETLs e integrações.</p>
             </div>
           </article>
 
-          <article class="timeline-year timeline-origin" data-year="2019">
-            <div class="year-marker"><span>2019</span><small>O começo</small></div>
-            <div class="year-events">
-              <section class="origin-message reveal" data-type="study">
-                <p class="eyebrow">O primeiro passo</p>
-                <h3>Estatística,<br />curiosidade e dados.</h3>
-                <p>O início da formação na UnB e da experiência profissional na ESTAT marcou o começo de uma trajetória construída entre análise, tecnologia e comunicação.</p>
-              </section>
+          <article class="duration-item side-right color-pnud reveal" style="--start: 22; --months: 34; --mobile-order: 7">
+            <div class="duration-line"><i></i></div>
+            <div class="duration-content">
+              <span class="item-kind">Experiência</span><time>Jan 2022 — Nov 2024</time>
+              <h3>Suporte Técnico ao Justiça 4.0</h3><p>PNUD &amp; CNJ</p>
+              <p class="item-detail">ETLs sobre o DataJUD, painéis nacionais e qualidade de indicadores.</p>
             </div>
           </article>
+
+          <article class="duration-item side-right work-lane-a color-cnj reveal" style="--start: 56; --months: 17; --mobile-order: 10">
+            <div class="duration-line"><i></i></div>
+            <div class="duration-content">
+              <span class="item-kind">Experiência</span><time>Ago 2020 — Dez 2021</time>
+              <h3>Estágio em Ciência de Dados</h3><p>CNJ</p>
+            </div>
+          </article>
+
+          <article class="duration-item side-right work-lane-b color-estat reveal" style="--start: 56; --months: 25; --mobile-order: 11">
+            <div class="duration-line"><i></i></div>
+            <div class="duration-content">
+              <span class="item-kind">Experiência</span><time>Dez 2019 — Dez 2021</time>
+              <h3>Analista de Dados Jr.</h3><p>ESTAT Consultoria</p>
+            </div>
+          </article>
+
+          <div class="origin-note reveal" style="--start: 91; --mobile-order: 12">
+            <span class="item-kind">Jan 2019</span>
+            <h3>Estatística, curiosidade e dados.</h3>
+            <p>O ponto inicial de uma trajetória construída entre análise, tecnologia e comunicação.</p>
+          </div>
         </div>
       </section>
 
