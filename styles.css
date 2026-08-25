@@ -69,13 +69,17 @@ button { font: inherit; }
 .chronology-guide { max-width: 1320px; margin: 0 auto 18px; display: grid; grid-template-columns: 28% 32% 10% 30%; color: var(--muted); font-family: "DM Mono", monospace; font-size: 9px; text-transform: uppercase; }
 .chronology-guide span:nth-child(3) { text-align: center; }
 .chronology-guide span:last-child { padding-left: 20px; }
-.chronology { --month: 18px; position: relative; max-width: 1320px; height: calc(98 * var(--month)); margin: 0 auto; border-top: 1px solid var(--ink); }
+.chronology { --month: 44px; position: relative; max-width: 1320px; height: calc(98 * var(--month)); margin: 0 auto; border-top: 1px solid var(--ink); }
 .chronology-axis { position: absolute; z-index: 2; top: 0; bottom: 0; left: 62%; width: 2px; background: var(--ink); }
-.chronology-axis::before { content: ""; position: sticky; display: block; top: calc(var(--header-height) + 20px); width: 10px; height: 10px; margin-left: -4px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 5px var(--paper); }
 .year-tick { position: absolute; z-index: 3; top: calc(var(--at) * var(--month)); left: 62%; width: 8%; padding-left: 16px; transform: translateY(-2px); }
 .year-tick::before { content: ""; position: absolute; left: -4px; top: 7px; width: 9px; height: 2px; background: var(--ink); }
 .year-tick strong { display: block; font-size: 16px; line-height: 1; }
 .year-tick small { display: block; margin-top: 4px; color: var(--red); font-family: "DM Mono", monospace; font-size: 8px; text-transform: uppercase; }
+.now-tick { position: absolute; z-index: 5; top: 0; left: 62%; padding: 10px 0 0 16px; transform: translateY(-2px); }
+.now-tick::before { content: ""; position: absolute; left: -4px; top: 15px; width: 9px; height: 9px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 4px var(--paper); }
+.now-tick strong, .now-tick small { display: block; font-family: "DM Mono", monospace; text-transform: uppercase; }
+.now-tick strong { font-size: 9px; }
+.now-tick small { margin-top: 3px; color: var(--muted); font-size: 8px; }
 .duration-item, .point-item, .origin-note { position: absolute; z-index: 4; top: calc(var(--start) * var(--month)); }
 .duration-item { min-height: 56px; height: calc(var(--months) * var(--month)); display: grid; grid-template-columns: 9px 1fr; gap: 14px; }
 .duration-line { position: relative; height: 100%; background: currentColor; border-radius: 5px; }
@@ -92,8 +96,7 @@ button { font: inherit; }
 .side-right-project { left: 70%; width: 30%; }
 .work-lane-a { width: 15%; }
 .work-lane-b { left: 85%; width: 15%; }
-.work-short-a { width: 14%; }
-.work-short-b { left: 85%; width: 15%; }
+.work-short-a, .work-short-b { left: 70%; width: 30%; }
 .work-short-a .duration-content h3, .work-short-b .duration-content h3 { font-size: 18px; }
 .duration-content { min-width: 0; padding: 1px 8px 16px 0; color: var(--ink); }
 .duration-content time { display: block; margin: 5px 0 9px; color: var(--muted); font-family: "DM Mono", monospace; font-size: 8px; text-transform: uppercase; }
